@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestão de Gastos 🌸</h1>
+            <p>Organize suas finanças de forma simples e prática</p>
+        </header>
+
+        <section class="card saldo-card">
+            <h2>Saldo Restante</h2>
+            <p id="saldoTotal">R$ 0,00</p>
+        </section>
+
+        <section class="card form-card">
+            <h2>Adicionar Novo Gasto</h2>
+            <form id="formGasto">
+                <div class="input-group">
+                    <label for="descricao">Descrição</label>
+                    <input type="text" id="descricao" placeholder="Ex: Café, Faculdade..." required>
+                </div>
+                <div class="input-group">
+                    <label for="valor">Valor (R$)</label>
+                    <input type="number" id="valor" step="0.01" placeholder="0.00" required>
+                </div>
+                <button type="submit" class="btn-adicionar">Adicionar Gasto</button>
+            </form>
+        </section>
+
+        <section class="card lista-card">
+            <h2>Histórico de Gastos</h2>
+            <ul id="listaGastos">
+                <!-- Os gastos aparecem aqui dinamicamente -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
